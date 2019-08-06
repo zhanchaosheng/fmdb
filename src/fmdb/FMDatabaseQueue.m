@@ -36,10 +36,7 @@ typedef NS_ENUM(NSInteger, FMDBTransaction) {
  */
 static const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey;
 
-@interface FMDatabaseQueue () {
-    dispatch_queue_t    _queue;
-    FMDatabase          *_db;
-}
+@interface FMDatabaseQueue ()
 @end
 
 @implementation FMDatabaseQueue
